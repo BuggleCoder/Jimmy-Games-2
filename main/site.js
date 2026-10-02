@@ -1,9 +1,9 @@
 let launchBtn = $("#launch");
 let header = $("#header");
-let acess = $("#acessCode");
+let access = $("#accessCode");
 
 launchBtn.on("click", function () {
-  if (acess.val() == "123Bob") {
+  if (access.val() == "123Bob") {
     header.text("Welcome");
   }
 });
