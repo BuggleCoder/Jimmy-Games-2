@@ -24,6 +24,6 @@ if (!loadContent()) {
   container.innerHTML += `<div id="gamesContainer"></div>`;
 }
 
-heading.textContent() = "Welcome to Jimmy Games"
+heading.textContent = "Welcome to Jimmy Games";
 const appsContainer = document.getElementById("appsContainer");
 const gamesContainer = document.getElementById("gamesContainer");
