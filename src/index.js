@@ -1,18 +1,14 @@
 const themes = ["dark", "light"];
 let theme = themes[0];
-const container = document.getElementById("container");
-const heading = document.getElementById("heading");
 
-if (themes[1]) {
-}
+const $container = $("#container");
+const $heading = $("#heading");
 
 function loadContent() {
-  container.innerHTML += `<div id="appsContainer"></div>`;
-  container.innerHTML += `<div id="gamesContainer"></div>`;
-  if (
-    document.getElementById("gamesContainer") &&
-    document.getElementById("appsContainer")
-  ) {
+  $container.append('<div id="appsContainer"></div>');
+  $container.append('<div id="gamesContainer"></div>');
+
+  if ($("#gamesContainer").length && $("#appsContainer").length) {
     return true;
   } else {
     return false;
@@ -20,10 +16,10 @@ function loadContent() {
 }
 
 if (!loadContent()) {
-  container.innerHTML += `<div id="appsContainer"></div>`;
-  container.innerHTML += `<div id="gamesContainer"></div>`;
+  $container.append('<div id="appsContainer"></div>');
+  $container.append('<div id="gamesContainer"></div>');
 }
+$heading.text("Welcome to Jimmy Games");
 
-heading.textContent = "Welcome to Jimmy Games";
-const appsContainer = document.getElementById("appsContainer");
-const gamesContainer = document.getElementById("gamesContainer");
+const $appsContainer = $("#appsContainer");
+const $gamesContainer = $("#gamesContainer");
