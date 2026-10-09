@@ -12,7 +12,7 @@ Will never be finished- Just constantly updated.
 
 ## Changelog
 
-You will notice minor differences between the original Jimmy Games and the current version.
+You will notice minor differences between he original Jimmy Games and the current version.
 
 - 0.0.0
   Repo created
