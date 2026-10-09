@@ -9,6 +9,11 @@ const $appBtn = $("#appBtn");
 let active = "nothing";
 
 $heading.text("Welcome to Jimmy Games");
+
 $gameBtn.on("click", function () {
   active = "games";
+});
+
+$appBtn.on("click", function () {
+  active = "apps";
 });
