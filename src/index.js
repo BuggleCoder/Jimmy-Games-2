@@ -7,4 +7,4 @@ const $gameBtn = $("#gameBtn");
 const $appBtn = $("#appBtn");
 
 $heading.text("Welcome to Jimmy Games");
-$gameBtn.on("click" function() {});
+$gameBtn.on("click", function () {});
